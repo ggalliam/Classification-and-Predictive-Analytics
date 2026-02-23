@@ -48,7 +48,7 @@ data/
 notebooks/ 
 src/ 
 
-Uploading 01_data_cleaning_and_eda.ipynb…]()
+[01_data_cleaning_and_eda.ipynb](https://github.com/user-attachments/files/25473630/01_data_cleaning_and_eda.ipynb)
 
 01_data_cleaning_and_eda.ipynb 02_modeling_walk_forward.ipynb 
 --- 
