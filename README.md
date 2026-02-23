@@ -1,4 +1,4 @@
-# Classification-and-Predictive-Analytics
+[01_data_cleaning_and_eda.ipynb](https://github.com/user-attachments/files/25473623/01_data_cleaning_and_eda.ipynb)# Classification-and-Predictive-Analytics
 Classification and Predictive Analytics on the Ontario interest rates
 # Ontario Quarterly Tax Interest Rate Direction Classification 
 ## Project Overview 
@@ -47,7 +47,11 @@ Secondary: Accuracy, Balanced Accuracy, Confusion Matrix, ROC-AUC
 data/ 
 notebooks/ 
 src/ 
+
+Uploading 01_data_cleaning_and_eda.ipynb…]()
+
 01_data_cleaning_and_eda.ipynb 02_modeling_walk_forward.ipynb 
 --- 
 ## Tools 
-Python, Pandas, NumPy, Scikit-learn, SHAP, Matplotlib
+Python, P[01_data_cleaning_and_eda.ipynb]
+andas, NumPy, Scikit-learn, SHAP, Matplotlib
