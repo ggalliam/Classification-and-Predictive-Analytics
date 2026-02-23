@@ -43,14 +43,26 @@ No random splitting.
 Primary metric: Macro-F1 score 
 Secondary: Accuracy, Balanced Accuracy, Confusion Matrix, ROC-AUC 
 --- 
+##Validation Strategy 
+To avoid leakage, time-based walk-forward validation is used.
+Baseline models:
+1) No change, always predicted as "Stable"
+2) Last-quarter direction
+Primary Evaluation Metric: Macro-F1 score
+---
 ## Folder Structure 
 data/ 
 notebooks/ 
 src/ 
 
-[01_data_cleaning_and_eda.ipynb](https://github.com/user-attachments/files/25473630/01_data_cleaning_and_eda.ipynb)
+Raw dataset:
+[Ontario_tax_rates.csv](https://github.com/user-attachments/files/25500994/Ontario_tax_rates.csv)
 
---- 
+Processed dataset:
+[01_data_cleaning_and_eda.ipynb](https://github.com/user-attachments/files/25473630/01_data_cleaning_and_eda.ipynb)
+---
 ## Tools 
 Python, P[01_data_cleaning_and_eda.ipynb]
 andas, NumPy, Scikit-learn, SHAP, Matplotlib
+
+
