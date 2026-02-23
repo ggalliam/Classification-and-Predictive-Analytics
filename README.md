@@ -1,4 +1,4 @@
-[01_data_cleaning_and_eda.ipynb](https://github.com/user-attachments/files/25473623/01_data_cleaning_and_eda.ipynb)# Classification-and-Predictive-Analytics
+# Classification-and-Predictive-Analytics
 Classification and Predictive Analytics on the Ontario interest rates
 # Ontario Quarterly Tax Interest Rate Direction Classification 
 ## Project Overview 
@@ -50,7 +50,6 @@ src/
 
 [01_data_cleaning_and_eda.ipynb](https://github.com/user-attachments/files/25473630/01_data_cleaning_and_eda.ipynb)
 
-01_data_cleaning_and_eda.ipynb 02_modeling_walk_forward.ipynb 
 --- 
 ## Tools 
 Python, P[01_data_cleaning_and_eda.ipynb]
