@@ -1,0 +1,40 @@
+cell_index,cell_type,execution_count,source,outputs
+0,code,,"import pandas as pd 
+import numpy as np import matplotlib.pyplot as plt
+import seaborn as sns 
+sns.set_style(""whitegrid"")",
+1,code,,"df = pd.read_csv(""../data/ontario_tax_interest_rates.csv"") 
+df.head()",
+2,code,,"df = df.sort_values([""year"", ""quarter""]).reset_index(drop=True) 
+df.info() 
+df.describe()",
+3,code,,"df[""delta_rate""] = df[""underpayment_rate""].diff() 
+def classify_change(x): 
+    if x > 0: 
+        return ""Increase"" 
+    elif x < 0: 
+        return ""Decrease"" 
+    else: return ""Stable"" 
+df[""direction""] = df[""delta_rate""].apply(classify_change) 
+df = df.dropna().reset_index(drop=True)",
+4,code,,"df[""direction""].value_counts() 
+sns.countplot(data=df, x=""direction"") 
+plt.title(""Class Distribution"") 
+plt.show()",
+5,code,,"plt.figure(figsize=(12,6)) 
+plt.plot(df[""underpayment_rate""]) 
+plt.title(""Underpayment Interest Rate Over Time"") 
+plt.xlabel(""Quarter Index"") 
+plt.ylabel(""Rate"") 
+plt.show()",
+6,code,,"df[""lag1_rate""] = df[""underpayment_rate""].shift(1) 
+df[""lag2_rate""] = df[""underpayment_rate""].shift(2) 
+df[""rolling_mean_4q""] = df[""underpayment_rate""].rolling(4).mean() 
+df[""rolling_std_4q""] = df[""underpayment_rate""].rolling(4).std() 
+df = df.dropna().reset_index(drop=True)",
+7,code,,"numeric_cols = df.select_dtypes(include=[np.number]) 
+plt.figure(figsize=(10,8)) 
+sns.heatmap(numeric_cols.corr(), annot=True, cmap=""coolwarm"") 
+plt.title(""Correlation Matrix"") 
+plt.show()",
+8,code,,"df.to_csv(""../data/cleaned_interest_rate_data.csv"", index=False)",
