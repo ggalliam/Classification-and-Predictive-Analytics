@@ -66,8 +66,11 @@ Primary Evaluation Metric: Macro-F1 score
 ---
 ## Folder Structure 
 data/ 
+docs/
+figures/
 notebooks/ 
-src/ 
+README.md/
+requirements.txt/
 
 Raw dataset:
 [Ontario_tax_rates.csv](https://github.com/user-attachments/files/25500994/Ontario_tax_rates.csv)
