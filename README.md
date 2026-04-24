@@ -25,10 +25,10 @@ Historical span: 2000Q1–2026Q1.
 --- 
 ## Research Questions 
 
-RQ1: What is the out-of-sample Macro-F1 score using lagged macroeconomic indicators and historical rate features? 
-RQ2: Does adding lagged macroeconomic indicators improve Macro-F1 relative to a historical-rate-only model? 
-RQ3: Is model performance stable across economic regimes (2000–2008, 2009–2019, 2020–2026)? 
-RQ4: Which predictors most influence classification decisions? 
+- RQ1: What is the out-of-sample Macro-F1 score using lagged macroeconomic indicators and historical rate features? 
+- RQ2: Does adding lagged macroeconomic indicators improve Macro-F1 relative to a historical-rate-only model? 
+- RQ3: Is model performance stable across economic regimes (2000–2008, 2009–2019, 2020–2026)? 
+- RQ4: Which predictors most influence classification decisions? 
 
 --- 
 ## Data Sources 
