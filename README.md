@@ -10,17 +10,6 @@ This project builds a time-series classification model to predict the quarterly 
 The rate is set quarterly by the Ontario Ministry of Finance. 
 
 --- 
-## Target Definition 
-
-Let: 
-r_t = Underpayment Interest Rate at quarter t 
-Δr_t = r_t - r_{t-1} 
-Classification rule: 
-Increase if Δr_t > 0 
-Decrease if Δr_t < 0 
-Stable if Δr_t = 0 
-Unit of analysis: One quarter. 
-Historical span: 2000Q1–2026Q1. 
 
 --- 
 ## Research Questions 
@@ -31,12 +20,29 @@ Historical span: 2000Q1–2026Q1.
 - RQ4: Which predictors most influence classification decisions? 
 
 --- 
-## Data Sources 
-Core dataset: 
-Ontario Data Catalogue – Tax Interest Rates 
-External indicators: 
-- Statistics Canada (CPI, GDP, unemployment) 
-- Bank of Canada (policy rate)
+## Data Selection 
+
+Interest tax rates are the main control tool in the macroeconomics of the modern world. They  function as policy instruments to influence macroeconomic stability, regulate inflation, and guide economic growth. Governments shape borrowing plans because of them, companies adjust spending around their shifts, people rethink savings when they move. Every three months in Ontario, the Finance Ministry adjusts tax-related percentages which are the quiet markers of what the economy is facing at the moment (Ontario Ministry of Finance, 2026).
+
+
+Furthermore, the dataset used in this analysis is sourced from the Ontario Data Catalogue which contains over a hundred data points of quarterly tax interest rates, such as overpayment rates (earned interest), appeal rates, and underpayment rates (interest charged).  This dataset is providing a view of quarterly interest rate behaviour from 1998 to 2026. 
+
+
+For the first quarter of 2026, the mean interest rate is 7.25%, indicating a moderately high rate environment. Interest rates trend upward, suggesting a gradual tightening of fiscal conditions, potentially reflecting macroeconomic inflation control policies.
+
+<img width="812" height="395" alt="Screenshot 2026-04-26 at 7 41 57 PM" src="https://github.com/user-attachments/assets/8e47052e-e437-4d03-b381-c392eed2ce4c" />
+
+Most rate changes are minor, so the policy adjustments are incremental rather than abrupt. Outliers are minimal and may represent policy interventions or external economic shocks.
+
+
+Taking a look at the interest tax rates over the years, it shows a bigger picture. The standard deviation is 0.42%, suggesting low short-term volatility. The minimum interest rate is 6.8%, and the maximum is 7.9%. 
+
+
+Overall, the relatively small changes in rates suggest a stable policy environment with controlled adjustments over time. 
+
+
+From descriptive statistics, it is known that the average interest rate is about 7.25% which is suggesting a stable policy trend with subtle adjustments and no major changes.
+
 ---
 ## Evaluation Strategy
 
