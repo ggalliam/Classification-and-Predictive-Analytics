@@ -1,23 +1,11 @@
 # Classification-and-Predictive-Analytics
 Classification and Predictive Analytics on the Ontario interest rates
 
-# Ontario Quarterly Tax Interest Rate Direction Classification 
-
 ## Project Overview 
 
 This project builds a time-series classification model to predict the quarterly direction (Increase, Decrease, Stable) of the Ontario Underpayment Tax Interest Rate. 
 
 The rate is set quarterly by the Ontario Ministry of Finance. 
-
---- 
-
---- 
-## Research Questions 
-
-- RQ1: What is the out-of-sample Macro-F1 score using lagged macroeconomic indicators and historical rate features? 
-- RQ2: Does adding lagged macroeconomic indicators improve Macro-F1 relative to a historical-rate-only model? 
-- RQ3: Is model performance stable across economic regimes (2000–2008, 2009–2019, 2020–2026)? 
-- RQ4: Which predictors most influence classification decisions? 
 
 --- 
 ## Data Selection 
